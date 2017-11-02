@@ -1,4 +1,4 @@
-package com.pride48.feedbot;
+package com.p48.feedbot.services;
 
 
 import java.io.File;

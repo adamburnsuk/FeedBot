@@ -1,4 +1,4 @@
-package com.pride48.feedbot;
+package com.p48.feedbot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
