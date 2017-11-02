@@ -1,0 +1,110 @@
+[
+{
+  "id":1,
+  "Name":"Big Fatty Online",
+  "URL":"http://feeds.feedburner.com/bigfattyonline",
+  "File Name":"BFO.mp3",
+  "Date":"8-7-2017"
+},{
+  "id":2,
+  "Name":"Dubious Intent",
+  "URL":"http://feeds.feedburner.com/dubiousintent",
+  "File Name":"DI.mp3",
+  "Date":"8-7-2017"},
+{ "id":3,
+  "Name":"Geeky Gay",
+  "URL":"http://feeds.feedburner.com/geekygay",
+  "File Name":"GG.mp3",
+  "Date":"8-7-2017"
+ },
+ { "id":4,
+  "Name":"Pride48 Network Shows",
+  "URL":"http://feeds.feedburner.com/Pride48_Shows",
+  "File Name":"Pride48.mp3",
+  "Date":"8-7-2017"
+ },
+ { "id":5,
+  "Name":"Chaotic Ravings",
+  "URL":"http://chaoticravings.com/?feed=rss2",
+  "File Name":"CR.mp3",
+  "Date":"8-7-2017"
+ },
+ { "id":6,
+  "Name":"Secretly Timid",
+  "URL":"http://www.secretlytimid.com/feed/podcast",
+  "File Name":"ST.mp3",
+  "Date":"8-7-2017"
+ },
+ { "id":7,
+  "Name":"Cocktails and Cream Puffs",
+  "URL":"http://cocktailsandcreampuffs.libsyn.com/rss",
+  "File Name":"CACP.mp3",
+  "Date":"8-7-2017"
+ },
+ { "id":8,
+  "Name":"Ramble Redhead",
+  "URL":"http://feeds.feedburner.com/rambleredhead",
+  "File Name":"RR.mp3",
+  "Date":"8-7-2017"
+ },
+ { "id":9,
+  "Name":"That Blue Jeans Guy",
+  "URL":"http://thatbluejeansguy.libsyn.com/rss",
+  "File Name":"GG.mp3",
+  "Date":"8-7-2017"
+ },
+ { "id":10,
+  "Name":"Catching Up",
+  "URL":"http://feeds.feedburner.com/cupodcast/MhCw",
+  "File Name":"GG.mp3",
+  "Date":"8-7-2017"
+ },
+  { "id":11,
+  "Name":"Pod Cubs",
+  "URL":"http://www.podcubs.net/feed/",
+  "File Name":"PC.mp3",
+  "Date":"8-7-2017"
+ },
+  { "id":12,
+  "Name":"The 5 by 5",
+  "URL":"http://www.spreaker.com/show/933166/episodes/feed",
+  "File Name":"5B5.mp3",
+  "Date":"8-7-2017"
+ },
+  { "id":13,
+  "Name":"The Pink Wheelnuts Garage",
+  "URL":"http://www.pinkwheelnuts.com/?feed=podcast",
+  "File Name":"PWG.mp3",
+  "Date":"8-7-2017"
+ },
+  { "id":14,
+  "Name":"Voice of turnipStyle",
+  "URL":"http://turnipstyle.com/podcast",
+  "File Name":"VOTS.mp3",
+  "Date":"8-7-2017"
+ },
+ { "id":15,
+  "Name":"Smellcast",
+  "URL":"http://feeds.feedburner.com/TheSmellcast",
+  "File Name":"SC.mp3",
+  "Date":"8-7-2017"
+ },
+  { "id":16,
+  "Name":"Pod is My Copilot",
+  "URL":"http://feeds.feedburner.com/podismycopilot",
+  "File Name":"PIMC.mp3",
+  "Date":"8-7-2017"
+ },
+  { "id":17,
+  "Name":"Life on the Shit List",
+  "URL":"http://lotsl.podbean.com/feed",
+  "File Name":"LOTSL.mp3",
+  "Date":"8-7-2017"
+ },
+  { "id":18,
+  "Name":"Blime Time",
+  "URL":"http://blimetime.libsyn.com/rss",
+  "File Name":"BLIME.mp3",
+  "Date":"8-7-2017"
+ }
+ ]

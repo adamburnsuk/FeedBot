@@ -9,7 +9,8 @@
 	<packaging>jar</packaging>
 
 	<name>feedbot</name>
-	<description>Demo project for Spring Boot</description>
+	
+	<description>Pride48 Feed Bot</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -74,6 +75,38 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+    <groupId>com.rometools</groupId>
+    <artifactId>rome</artifactId>
+    <version>1.7.4</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpcore</artifactId>
+    <version>4.4.6</version><!--$NO-MVN-MAN-VER$-->
+</dependency>
+<dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpclient</artifactId>
+    </dependency>
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.5</version>
+</dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope><!--$NO-MVN-MAN-VER$-->
+    </dependency>
+    <dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    </dependency><!--$NO-MVN-MAN-VER$-->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    </dependency>
 	</dependencies>
 
 	<build>
