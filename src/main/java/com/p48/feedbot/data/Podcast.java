@@ -1,12 +1,13 @@
 package com.p48.feedbot.data;
 
+import org.springframework.data.annotation.Id;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Podcast {
 
-@SerializedName("id")
-@Expose
+@Id
 private Integer id;
 
 @SerializedName("Name")
@@ -24,6 +25,15 @@ private String fileName;
 @SerializedName("Date")
 @Expose
 private String date;
+
+
+public Podcast(String name, String url, String fileName, String date) {
+	super();
+	this.name = name;
+	this.url = url;
+	this.fileName = fileName;
+	this.date = date;
+}
 
 public Integer getId() {
 return id;

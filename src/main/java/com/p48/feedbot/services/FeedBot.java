@@ -2,6 +2,7 @@ package com.p48.feedbot.services;
 
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Type;
@@ -15,11 +16,13 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
 import com.p48.feedbot.data.Podcast;
+import com.p48.feedbot.data.PodcastRepository;
 import com.rometools.rome.feed.synd.SyndEntry;
 import com.rometools.rome.feed.synd.SyndFeed;
 import com.rometools.rome.io.FeedException;
@@ -33,7 +36,11 @@ import com.rometools.rome.io.XmlReader;
  */
 public class FeedBot 
 {
-    public void getPodcasts(String podcastList, String storageLocation ) throws IllegalArgumentException, MalformedURLException, IOException, FeedException
+	
+	@Autowired
+	PodcastRepository pr;
+	
+    public void getPodcasts(String podcastList, String storageLocation) throws IllegalArgumentException, MalformedURLException, IOException, FeedException
     {
     	
     	Gson gson = new Gson();
@@ -69,6 +76,27 @@ public class FeedBot
     	
     }
     
+    public void savePodcastInfotoDB(String podcastList, String storageLocation) throws FileNotFoundException, IllegalArgumentException, FeedException {
+    	
+    	Gson gson = new Gson();
+    	JsonReader reader = new JsonReader(new FileReader(podcastList));
+    	
+    	Type listType = new TypeToken<List<Podcast>>(){}.getType();
+    	List<Podcast> data = gson.fromJson(reader, listType);
+    	
+    	
+    	for(Podcast podcast : data) {
+    		
+    		try {
+    		
+    			pr.save(podcast);
+    		
+    		}
+    		catch(Exception e) {
+    			System.out.println(e.getMessage());
+    		}
+    	}
+    }
     
     public static void downloadFile(URL mp3Url, File fileName) throws IOException {
     	//Copy the file
